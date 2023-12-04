@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function formularioCosasA() {
-    const [valores, setValores] = useState ({});
+    const [valores, setValores] = useState ({nombre: '', apellido: '', edad: '', tienePasaporte: '' });
 
 }
 return (
