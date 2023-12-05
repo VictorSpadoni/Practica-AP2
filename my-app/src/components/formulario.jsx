@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function formularioCosasA() {
-    const [valores, setValores] = useState ({nombre: '', apellido: '', edad: '', tienePasaporte: '' });
+    const [valores, setValores] = useState ({nombre: '', apellido: '', edad: '', tienePasaporte: false });
 
 }
 return (
@@ -35,13 +35,15 @@ return (
             <input
             type="checkbox"
             name="loquevayaaca4"
-            value={inputs.loquevayaaca4 || ""}
+            checked={inputs.loquevayaaca4}
             onChange={handleChange}
              />
 
          </label>
+         <button type="submit">Enviar</button>
   </form>
 
 
-)
+); 
+
 render(<formularioCosasA/>)
