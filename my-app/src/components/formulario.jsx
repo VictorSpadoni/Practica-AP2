@@ -45,6 +45,6 @@ return (
 
 
 ); 
-
+export default Formulario
 render(<formularioCosas/>)
 

@@ -4,4 +4,6 @@ const formularioCosas = ({agregarAlFormulario }) => {
     
 }
 
- 
+export default welcome
+
+
