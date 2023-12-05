@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function formularioCosasA() {
+function formularioCosas() {
     const [valores, setValores] = useState ({nombre: '', apellido: '', edad: '', tienePasaporte: false });
 
 }
@@ -46,4 +46,5 @@ return (
 
 ); 
 
-render(<formularioCosasA/>)
+render(<formularioCosas/>)
+
