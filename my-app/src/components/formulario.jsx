@@ -44,7 +44,8 @@ return (
   </form>
 
 
-); 
-export default Formulario
-render(<formularioCosas/>)
+);
+ 
+export default formularioCosas
+
 
