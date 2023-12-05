@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-function formularioCosas() {
+function FormularioCosas() {
     const [valores, setValores] = useState ({nombre: '', apellido: '', edad: '', tienePasaporte: false });
 
 }
 return (
   <form onSubmit={handleSubmit}>
-    <label>Valor 1
+    <label>Nombre
         <input
         type="text"
         name="loquevayaaca"
@@ -14,7 +14,7 @@ return (
         onChange={handleChange}
         />
          </label>
-         <label>Valor 2
+         <label>Apellido
             <input
             type="text"
             name="loquevayaaca2"
@@ -22,7 +22,7 @@ return (
             onChange={handleChange}
             />
          </label>
-         <label>Valor 3
+         <label>Edad
             <input
             type="number"
             name="loquevayaaca3"
@@ -31,7 +31,7 @@ return (
              />
 
          </label>
-         <label>Valor 4
+         <label>Posee vehículo ?
             <input
             type="checkbox"
             name="loquevayaaca4"
@@ -40,13 +40,26 @@ return (
              />
 
          </label>
+         <label>País de origen
+         <select
+          name="opcionSeleccionada"
+          value={inputs.opcionSeleccionada}
+          onChange={handleChange}
+         >
+          <option value="opcion1">Argentina</option>
+          <option value="opcion2">Chile</option>
+          <option value="opcion3">Brasil</option>
+          <option value="opcion4">Uruguay</option>
+        </select>
+            </label>
+
          <button type="submit">Enviar</button>
   </form>
 
 
 );
  
-function botonTickets() {
+function BotonTickets() {
   const [count, setCount] = useState(0);
 
   function handleClick() {
@@ -63,6 +76,5 @@ function botonTickets() {
 
 
 
-export default formularioCosas
-
+export default {FormularioCosas , BotonTickets};
 
