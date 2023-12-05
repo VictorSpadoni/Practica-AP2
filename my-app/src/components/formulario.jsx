@@ -31,6 +31,15 @@ return (
              />
 
          </label>
+         <label>Valor 4
+            <input
+            type="checkbox"
+            name="loquevayaaca4"
+            value={inputs.loquevayaaca4 || ""}
+            onChange={handleChange}
+             />
+
+         </label>
   </form>
 
 
