@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 
-function FormularioCosas() {
-    const [valores, setValores] = useState ({nombre: '', apellido: '', edad: '', tienePasaporte: false });
+function FormularioCosas()  {
+    const [valores , setValores ] = useState ({nombre: '', apellido: '', edad: '', vehiculo: false , nacionalidad: null});
 
-}
-return (
-  <form onSubmit={handleSubmit}>
+    
+
+ return ( 
+ <form onSubmit={handleSubmit}>
     <label>Nombre
         <input
         type="text"
         name="loquevayaaca"
-        value={inputs.loquevayaaca || ""}
+        value={valores.loquevayaaca || ""}
         onChange={handleChange}
         />
          </label>
@@ -18,7 +19,7 @@ return (
             <input
             type="text"
             name="loquevayaaca2"
-            value={inputs.loquevayaaca2 || ""}
+            value={valores.loquevayaaca2 || ""}
             onChange={handleChange}
             />
          </label>
@@ -26,7 +27,7 @@ return (
             <input
             type="number"
             name="loquevayaaca3"
-            value={inputs.loquevayaaca3 || ""}
+            value={valores.loquevayaaca3 || ""}
             onChange={handleChange}
              />
 
@@ -35,7 +36,7 @@ return (
             <input
             type="checkbox"
             name="loquevayaaca4"
-            checked={inputs.loquevayaaca4}
+            checked={valores.loquevayaaca4}
             onChange={handleChange}
              />
 
@@ -43,7 +44,7 @@ return (
          <label>País de origen
          <select
           name="opcionSeleccionada"
-          value={inputs.opcionSeleccionada}
+          value={valores.opcionSeleccionada}
           onChange={handleChange}
          >
           <option value="opcion1">Argentina</option>
@@ -56,8 +57,7 @@ return (
          <button type="submit">Enviar</button>
   </form>
 
-
-);
+ )};
  
 function BotonTickets() {
   const [count, setCount] = useState(0);
@@ -76,5 +76,5 @@ function BotonTickets() {
 
 
 
-export default {FormularioCosas , BotonTickets};
+export default { FormularioCosas , BotonTickets};
 
